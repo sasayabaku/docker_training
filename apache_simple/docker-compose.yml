@@ -1,0 +1,9 @@
+version: '2'
+services:
+  apache:
+    image: httpd
+    container_name: 'simple_apache'
+    ports:
+      - 8080:80
+    volumes:
+      - ./avana:/usr/local/apache2/htdocs
