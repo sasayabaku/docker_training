@@ -1,0 +1,18 @@
+/*++ Origin ++*/
+.origin_subtitle { color:#fb5353;}
+
+.origin_highlight{ color:#fb5353}
+
+.origin_images{ width:1031px; height:541px;}
+
+.origin-home-images {
+  filter: brightness(70%);
+}
+
+.origin_bachelor {
+  border-bottom:#fb5353 solid;
+}
+
+.origin_fmri_link {
+  color:#fb5353;
+}
