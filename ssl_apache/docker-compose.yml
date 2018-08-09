@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  apache:
+    image: php:7.2-apache
+    container_name: 'ssl_apache'
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./src:/var/www/html/
+      - ./ssl.conf:/etc/apache2/site-available/ssl.conf
+      - ./entrypoint.sh:/opt/entrypoint.sh
