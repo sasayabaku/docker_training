@@ -8,8 +8,8 @@ services:
       - 443:443
     volumes:
       - ./src:/var/www/html/
-      - ./ssl.conf:/etc/apache2/sites-available/ssl.conf
-      - ./entrypoint.sh:/opt/entrypoint.sh
+      - ./conf/ssl.conf:/etc/apache2/sites-available/ssl.conf
+      - ./conf/entrypoint.sh:/opt/entrypoint.sh
     build:
       context: .
       dockerfile: ./Dockerfile
