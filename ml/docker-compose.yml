@@ -1,0 +1,11 @@
+version: '2'
+services:
+  app:
+    build: .
+    runtime: nvidia
+    container_name: python
+    volumes:
+      - './:/usr/src/app'
+    ports:
+      - '8500:5000'
+    tty: true
